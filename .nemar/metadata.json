@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "The Bitbrain Open Access Sleep (BOAS) dataset",
-  "description": "The Bitbrain Open Access Sleep (BOAS) dataset comprises 128 nights of simultaneous polysomnography and wearable EEG recordings designed to validate emerging wearable sleep monitoring technologies against clinical gold-standard systems. The dataset includes comprehensive PSG recordings from a Micromed Brain Quick Plus Evolution system and forehead EEG data from a Bitbrain wearable headband, along with human expert consensus sleep stage labels and AI-generated sleep scoring annotations. This resource enables direct comparison and validation of wearable EEG performance for sleep stage classification in a diverse population sample.",
-  "methods_description": "Data were collected from 128 nights of simultaneous recording using two systems: a Micromed Brain Quick Plus Evolution PSG system (recording EEG at F3, F4, C3, C4, O1, O2; EOG; chin EMG; abdominal and thoracic breathing belts; thermistor and nasal cannula airflow; and PPG) and a Bitbrain wearable EEG headband (recording forehead EEG at AF7/AF8 locations, 6-axis IMU, and PPG). Sleep stages were independently scored by three expert sleep scorers following AASM criteria, with consensus labels derived when at least two scorers agreed. A deep learning model was trained on consensus labels using cross-validation, achieving 87.13% accuracy on PSG data and 86.71% on wearable EEG data.",
+  "description": "The Bitbrain Open Access Sleep (BOAS) dataset comprises 128 nights of simultaneous polysomnography and wearable EEG recordings designed to validate emerging wearable sleep monitoring technologies against clinical gold-standard systems. The dataset includes comprehensive PSG recordings from a Micromed Brain Quick Plus Evolution system and synchronized wearable EEG data from a Bitbrain forehead headband, along with human expert consensus sleep stage annotations and AI-generated sleep scoring labels. This resource enables direct comparison and validation of wearable EEG performance for sleep stage classification in a diverse population sample.",
+  "methods_description": "Data were collected from 128 nights of simultaneous recording using two systems: a Micromed Brain Quick Plus Evolution PSG system (recording EEG from F3, F4, C3, C4, O1, O2; EOG; chin EMG; abdominal and thoracic breathing belts; thermistor and nasal cannula airflow; and PPG) and a Bitbrain wearable EEG headband (recording forehead EEG at AF7/AF8 locations, 6-axis IMU, and PPG). Sleep stages were independently scored by three expert raters following AASM criteria, with consensus labels derived when at least two raters agreed. A deep learning model was trained on consensus labels using cross-validation, achieving 87.13% accuracy on PSG data and 86.71% on wearable EEG data.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -28,21 +28,18 @@
       "term": "electroencephalography"
     },
     {
-      "term": "wearable sensors"
-    },
-    {
       "term": "Polysomnography",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D017286"
+    },
+    {
+      "term": "wearable sensors"
     },
     {
       "term": "deep learning"
     },
     {
       "term": "sleep monitoring"
-    },
-    {
-      "term": "EEG"
     }
   ],
   "related_identifiers": [
@@ -104,7 +101,7 @@
       "award_title": "MANOLO"
     },
     {
-      "funder_name": "Government of Aragon",
+      "funder_name": "Programa Aragon Investigo",
       "award_number": "Z-0073-INVESCS-22"
     },
     {
