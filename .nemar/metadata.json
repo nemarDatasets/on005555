@@ -1,0 +1,61 @@
+{
+  "version": "2.0",
+  "dataset_id": "on005555",
+  "source": "openneuro",
+  "source_id": "ds005555",
+  "title": "The Bitbrain Open Access Sleep (BOAS) dataset",
+  "authors": {
+    "Eduardo López-Larraz": {},
+    "María Sierra-Torralba": {},
+    "Sergio Clemente": {},
+    "Galit Fierro": {},
+    "David Oriol": {},
+    "Javier Minguez": {},
+    "Luis Montesano": {},
+    "Jens G. Klinzing": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds005555.v1.1.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.8.0",
+  "recording_modality": [
+    "eeg"
+  ],
+  "datatypes": [
+    "eeg"
+  ],
+  "funding_references": [
+    {
+      "funder_name": "This work was funded by Programa Misiones de I+D en Inteligencia Artificial (AI4HEALTHYAGING: MIA.2021.M02.0007)"
+    },
+    {
+      "funder_name": "Penta call 5 – Joint call – Euripides (pAvIs: IDI-20210522)"
+    },
+    {
+      "funder_name": "H2020 FET-Open call (MITICS: 964677)"
+    },
+    {
+      "funder_name": "Horizon-EIC-2022 call (BAYFLEX: 101099555)"
+    },
+    {
+      "funder_name": "Horizon-RIA-2023 call (MANOLO: 101135782)"
+    },
+    {
+      "funder_name": "Programa Aragon Investigo (Exp: Z-0073-INVESCS-22)"
+    },
+    {
+      "funder_name": "Government of Aragon (IDMF/2023/0007)"
+    },
+    {
+      "funder_name": "Programa red.es (2021/C005/00143341)."
+    }
+  ],
+  "acknowledgements": "n/a"
+}
