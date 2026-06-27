@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "The Bitbrain Open Access Sleep (BOAS) dataset",
+  "description": "The Bitbrain Open Access Sleep (BOAS) dataset comprises 128 nights of simultaneous polysomnography and wearable EEG recordings designed to validate emerging wearable sleep monitoring technologies against clinical gold-standard systems. The dataset includes comprehensive PSG recordings from a Micromed Brain Quick Plus Evolution system and forehead EEG data from a Bitbrain wearable headband, along with human expert consensus sleep stage labels and AI-generated sleep scoring annotations. This resource enables direct comparison and validation of wearable EEG performance for sleep stage classification in a diverse population sample.",
+  "methods_description": "Data were collected from 128 nights of simultaneous recording using two systems: a Micromed Brain Quick Plus Evolution PSG system (recording EEG at F3, F4, C3, C4, O1, O2; EOG; chin EMG; abdominal and thoracic breathing belts; thermistor and nasal cannula airflow; and PPG) and a Bitbrain wearable EEG headband (recording forehead EEG at AF7/AF8 locations, 6-axis IMU, and PPG). Sleep stages were independently scored by three expert sleep scorers following AASM criteria, with consensus labels derived when at least two scorers agreed. A deep learning model was trained on consensus labels using cross-validation, achieving 87.13% accuracy on PSG data and 86.71% on wearable EEG data.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -18,12 +20,32 @@
     },
     "Jens G. Klinzing": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds005555.v1.1.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "sleep staging"
     },
+    {
+      "term": "electroencephalography"
+    },
+    {
+      "term": "wearable sensors"
+    },
+    {
+      "term": "Polysomnography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D017286"
+    },
+    {
+      "term": "deep learning"
+    },
+    {
+      "term": "sleep monitoring"
+    },
+    {
+      "term": "EEG"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on005555",
       "identifier_type": "URL",
@@ -48,38 +70,42 @@
       "identifier": "10.1101/2024.06.12.597764",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005555.v1.1.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
     {
-      "funder_name": "Spanish Ministry of Science and Innovation",
+      "funder_name": "Programa Misiones de I+D en Inteligencia Artificial",
       "award_number": "MIA.2021.M02.0007",
-      "award_title": "AI4HEALTHYAGING - Programa Misiones de I+D en Inteligencia Artificial"
+      "award_title": "AI4HEALTHYAGING"
     },
     {
       "funder_name": "Euripides",
       "award_number": "IDI-20210522",
-      "award_title": "pAvIs - Penta call 5 Joint call"
+      "award_title": "pAvIs"
     },
     {
       "funder_name": "European Commission",
       "award_number": "964677",
-      "award_title": "MITICS - H2020 FET-Open call"
+      "award_title": "MITICS"
     },
     {
       "funder_name": "European Commission",
       "award_number": "101099555",
-      "award_title": "BAYFLEX - Horizon-EIC-2022 call"
+      "award_title": "BAYFLEX"
     },
     {
       "funder_name": "European Commission",
       "award_number": "101135782",
-      "award_title": "MANOLO - Horizon-RIA-2023 call"
+      "award_title": "MANOLO"
     },
     {
       "funder_name": "Government of Aragon",
-      "award_number": "Z-0073-INVESCS-22",
-      "award_title": "Programa Aragon Investigo"
+      "award_number": "Z-0073-INVESCS-22"
     },
     {
       "funder_name": "Government of Aragon",
@@ -91,45 +117,19 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "35.9 GB (257 files)"
   ],
   "formats": [
     ".edf",
     ".json",
     ".md",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "The Bitbrain Open Access Sleep (BOAS) dataset comprises 128 nights of simultaneous polysomnography and wearable EEG recordings from 108 unique participants, designed to validate emerging wearable EEG technology against clinical-grade sleep monitoring standards. The dataset includes human expert consensus sleep stage labels derived from three independent scorers following AASM criteria, as well as AI-generated sleep stage labels from a deep learning model trained on both PSG and wearable EEG data. This dual-recording approach provides a comprehensive resource for evaluating wearable EEG performance in sleep studies and advancing automated sleep staging algorithms.",
-  "methods_description": "Data were collected simultaneously using a Brain Quick Plus Evolution PSG system (Micromed) and a wearable EEG headband (Bitbrain). PSG recordings included 6-channel EEG (F3, F4, C3, C4, O1, O2), EOG, chin EMG, abdominal and thoracic breathing belts, thermistor and nasal cannula airflow sensors, and PPG-derived pulse, heart rate, and oxygen saturation. The wearable headband recorded forehead EEG (AF7, AF8 approximation), 6-axis IMU data (3-axis accelerometer and gyroscope), and PPG pulse. Sleep stages were independently scored by three expert raters following AASM criteria, with consensus labels derived when at least two raters agreed. A deep learning model was trained using cross-validation on both PSG and wearable EEG datasets, achieving 87.13% and 86.71% agreement with human consensus labels respectively.",
-  "keywords": [
-    {
-      "term": "sleep staging"
-    },
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "Polysomnography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D017286"
-    },
-    {
-      "term": "wearable sensors"
-    },
-    {
-      "term": "deep learning"
-    },
-    {
-      "term": "sleep monitoring"
-    },
-    {
-      "term": "electroencephalography"
-    }
-  ],
-  "source_hash": "6b89fc6a7e4de7c2d773b70e3247f271565037034fb06391a0deceeea85bad25"
+  "source_hash": "43f43087216f8b3422221652520d28862ffe47c58589c23c99d358f5d1ded2fa"
 }
