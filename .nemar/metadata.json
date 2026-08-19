@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "The Bitbrain Open Access Sleep (BOAS) dataset",
-  "description": "The Bitbrain Open Access Sleep (BOAS) dataset comprises 128 nights of simultaneous polysomnography and wearable EEG recordings designed to validate emerging wearable sleep monitoring technologies against clinical gold-standard systems. The dataset includes comprehensive PSG recordings from a Micromed Brain Quick Plus Evolution system and synchronized wearable EEG data from a Bitbrain forehead headband, along with human expert consensus sleep stage annotations and AI-generated sleep scoring labels. This resource enables direct comparison and validation of wearable EEG performance for sleep stage classification in a diverse population sample.",
-  "methods_description": "Data were collected from 128 nights of simultaneous recording using two systems: a Micromed Brain Quick Plus Evolution PSG system (recording EEG from F3, F4, C3, C4, O1, O2; EOG; chin EMG; abdominal and thoracic breathing belts; thermistor and nasal cannula airflow; and PPG) and a Bitbrain wearable EEG headband (recording forehead EEG at AF7/AF8 locations, 6-axis IMU, and PPG). Sleep stages were independently scored by three expert raters following AASM criteria, with consensus labels derived when at least two raters agreed. A deep learning model was trained on consensus labels using cross-validation, achieving 87.13% accuracy on PSG data and 86.71% on wearable EEG data.",
+  "description": "The Bitbrain Open Access Sleep (BOAS) dataset comprises 128 nights of simultaneous polysomnography (PSG) and wearable EEG headband recordings from 108 unique participants, designed to validate wearable EEG technology against clinical PSG for sleep monitoring. The dataset includes human-consensus sleep stage labels derived from expert scoring of PSG recordings, as well as AI-generated sleep stage labels for both PSG and wearable EEG data using a deep learning model. Additional demographic metadata (age, sex, BMI) are provided for each participant, offering a comprehensive resource for sleep staging research and wearable EEG validation.",
+  "methods_description": "PSG recordings were obtained using a Brain Quick Plus Evolution system by Micromed, capturing EEG, EOG, EMG, respiratory, and PPG signals, while simultaneous wearable EEG recordings were collected using a Bitbrain forehead headband with EEG, IMU, and PPG sensors. Sleep stages were manually scored by three independent expert scorers following AASM criteria, with consensus labels derived from majority agreement (a fourth scorer resolved ties). A deep learning model was trained on the human-consensus labels to generate automatic sleep stage predictions for both PSG and wearable EEG data.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -22,10 +22,7 @@
   },
   "keywords": [
     {
-      "term": "sleep staging"
-    },
-    {
-      "term": "electroencephalography"
+      "term": "EEG"
     },
     {
       "term": "Polysomnography",
@@ -33,13 +30,21 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D017286"
     },
     {
-      "term": "wearable sensors"
+      "term": "Sleep Stages",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012894"
+    },
+    {
+      "term": "wearable EEG"
+    },
+    {
+      "term": "sleep staging"
     },
     {
       "term": "deep learning"
     },
     {
-      "term": "sleep monitoring"
+      "term": "BIDS"
     }
   ],
   "related_identifiers": [
@@ -81,22 +86,22 @@
       "award_title": "AI4HEALTHYAGING"
     },
     {
-      "funder_name": "Euripides",
+      "funder_name": "Penta call 5 – Joint call – Euripides",
       "award_number": "IDI-20210522",
       "award_title": "pAvIs"
     },
     {
-      "funder_name": "European Commission",
+      "funder_name": "H2020 FET-Open",
       "award_number": "964677",
       "award_title": "MITICS"
     },
     {
-      "funder_name": "European Commission",
+      "funder_name": "Horizon-EIC-2022",
       "award_number": "101099555",
       "award_title": "BAYFLEX"
     },
     {
-      "funder_name": "European Commission",
+      "funder_name": "Horizon-RIA-2023",
       "award_number": "101135782",
       "award_title": "MANOLO"
     },
@@ -109,7 +114,7 @@
       "award_number": "IDMF/2023/0007"
     },
     {
-      "funder_name": "red.es",
+      "funder_name": "Programa red.es",
       "award_number": "2021/C005/00143341"
     }
   ],
